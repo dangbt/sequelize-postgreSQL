@@ -1,0 +1,15 @@
+type Order {
+    id: ID
+    buyer: User!
+    createdAt: String
+    updatedAt: String
+}
+
+type Order_Items {
+    id: ID
+    order: Order!
+    product: Product!
+    quantity: Int
+    createdAt: String
+    updatedAt: String
+}

@@ -1,0 +1,22 @@
+type newProduct {
+    product: Product
+    quantity: Int
+}
+
+type newOrder {
+    order: User!
+    product: [Product]
+}
+
+type Query {
+    user(id:ID):User
+    users: [User]
+
+    product(id: ID): Product
+    products: [Product]
+
+    order(id:ID): newOrder
+    orders: [Order]
+
+    orderItems: [Order_Items]
+}
